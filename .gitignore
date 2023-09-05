@@ -1,0 +1,13 @@
+env.local
+.idea
+env/
+venv/
+video_1.py
+video_2.py
+video_3.py
+video_4.py
+video_5.py
+video_6.py
+video_7.py
+
+
