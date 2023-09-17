@@ -17,6 +17,9 @@ class Person:
     щоб вони не могли бути змінені напряму ззовні класу. Створені методи для доступу до цих властивостей
     та встановлення їх значень.
     """
+    def __init__(self, name, age):
+        self.__name = name
+        self.__age = age
 
     def set_name(self, name):
         self.__name = name#приватна властивість name
@@ -31,8 +34,6 @@ class Person:
         return self.__age
 
 
-person = Person()
-person.set_name("John")
-person.set_age(25)
+person = Person('John', 25)
 print(person.get_name())
 print(person.get_age())
